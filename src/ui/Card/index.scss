@@ -1,0 +1,15 @@
+.card {
+  background-color: orangered;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0rem 1rem 2rem rgba(#000, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform .3s;
+  &:hover {
+    box-shadow: 0rem 1rem 2rem rgba(#000, 0.2);
+    transform:translateY(-.4rem);
+
+  }
+  //   width: 40%;
+}

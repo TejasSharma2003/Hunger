@@ -1,0 +1,112 @@
+.header {
+  padding: 2rem;
+  position: sticky;
+  top: 0rem;
+  z-index: 1;
+  background-color: #F9F9F9;
+  // &--sticky {
+  //   position:sticky;
+  //   top:0rem;
+  //   background-color: #bcbcbc;
+  //   z-index: 100;
+
+  // }
+  &__container {
+    max-width: 119.2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  &__drop-text-area {
+    width: 60%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:focus-within {
+      box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+      transform: translateY(-0.1rem);
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    &::after {
+      content: url("../../assets/Polygon\ 2.svg");
+      background-size: cover;
+      position: absolute;
+      display: inline-block;
+      top: 24%;
+      right: 0%;
+      padding: 0 0.2rem;
+      transition: transform 0.3s;
+    }
+  }
+
+  &__arrow-up::after {
+    top: 0;
+    transform: rotate(180deg);
+  }
+
+  &__dropdown {
+    appearance: none;
+    padding: 0.4rem 2rem;
+    border: none;
+    font-size: 1.7rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-size: 1.7rem;
+
+    &::placeholder {
+      color: #bcbcbc;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+
+    background-color: #f05a3f;
+    height: 100%;
+    width: 25%;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s;
+    backface-visibility: hidden;
+    border: none;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    & > * {
+      margin: 0 0.5rem;
+    }
+  }
+}

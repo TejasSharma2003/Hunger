@@ -1,0 +1,13 @@
+@mixin gradient-eff {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    150deg,
+    rgba(#f05a3f, 0.5),
+    rgba(#fa8e7a, 0.5)
+  );
+}

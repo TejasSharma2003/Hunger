@@ -1,0 +1,60 @@
+@import "../../mixins.scss";
+
+.item {
+  position: relative;
+  &__img-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    // background-image: linear-gradient(120deg, rgba(#F05A3F,.2),rgba(#F05A3F,.2));
+
+    &::before {
+      @include gradient-eff;
+      // content: "";
+      // width: 100%;
+      // height: 100%;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+      // background-image: linear-gradient(
+      //   to bottom,
+      //   rgba(#f05a3f, 0.6),
+      //   rgba(#2F2E36, 0.6)
+      // );
+    }
+  }
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    flex: 1;
+  }
+
+  &__text-box {
+    text-align: center;
+    padding: 0 3rem;
+    // position:relative;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 1rem 0rem 0.7rem 0;
+  }
+
+  &__pricing {
+    background-color: #f15b40;
+    border-radius: 30px;
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+  }
+
+  &__caption {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+}
