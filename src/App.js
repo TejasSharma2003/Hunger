@@ -34,9 +34,6 @@ function App() {
 
   return (
     <>
-      <h1 className="message-imp">
-        Open on your fucking PC Dude <br /> ~ tejas
-      </h1>
       <div className="App">
         <PopUp />
         <Header setError={setError} />
